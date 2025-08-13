@@ -1,0 +1,59 @@
+@media print {
+    body {
+        background: white !important;
+        color: #000 !important;
+        font-size: 12pt;
+    }
+
+    a {
+        color: #000;
+        text-decoration: underline;
+    }
+
+    img {
+        max-width: 100% !important;
+        height: auto !important;
+        page-break-inside: avoid;
+    }
+
+    nav,
+    .MuiAppBar-root,
+    .MuiDrawer-root,
+    .MuiButton-root,
+    .MuiIconButton-root,
+    .back-to-top,
+    .footer,
+    .print-hidden {
+        display: none !important;
+    }
+
+    .print-article {
+        padding: 0 !important;
+        box-shadow: none !important;
+        max-width: 100% !important;
+    }
+
+    .MuiContainer-root {
+        margin: 0 !important;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        color: #000 !important;
+        break-after: avoid;
+    }
+
+    figure,
+    table {
+        page-break-inside: avoid;
+    }
+
+    @page {
+        size: auto;
+        margin: 1in;
+    }
+}
